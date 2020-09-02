@@ -35,7 +35,9 @@ namespace CustomControl2020
 
         // Using a DependencyProperty as the backing store for ColorSet.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ColorSetProperty =
-            DependencyProperty.Register("ColorSet", typeof(Color), typeof(ColorPicker), new PropertyMetadata(Colors.Red));
+            DependencyProperty.Register("ColorSet", typeof(Color), 
+                typeof(ColorPicker), 
+                new FrameworkPropertyMetadata(Colors.Red, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault));
 
         private void btnRed(object sender, RoutedEventArgs e)
         {

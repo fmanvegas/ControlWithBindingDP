@@ -17,7 +17,7 @@
         <Border Background="{Binding BoundColor, Converter={StaticResource ctb}}"/>
         
         <local:ColorPicker VerticalAlignment="Bottom" MinHeight="150" BorderBrush="Black" BorderThickness="2"
-                           ColorSet="{Binding ElementName=win, Path=DataContext.BoundColor, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                           ColorSet="{Binding ElementName=win, Path=DataContext.BoundColor}"
                            />
     </Grid>
 </Window>

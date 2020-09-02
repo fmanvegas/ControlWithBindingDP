@@ -17,7 +17,7 @@ namespace CustomControl2020
             get => _clr;
             set { _clr = value; OnPropChanged(); }
         }
-        private Color _clr;
+        private Color _clr = Colors.Black;
     }
 
     public class PropChanged : INotifyPropertyChanged
